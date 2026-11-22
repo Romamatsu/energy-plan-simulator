@@ -1,6 +1,7 @@
 from rates import PLANS
 
 def get_valid_number(prompt):
+    """0以上の有効な数値が入力されるまで繰り返し入力を受け付ける関数。"""
     while True:
         try:
             value = float(input(prompt))
@@ -24,7 +25,7 @@ def calculate_monthly_cost(plan_name, elec, gas, **kwargs):
 
 
 
-# Now each question only repeats ITSELF if the user types a letter!
+# ユーザー質問：
 elec_kwh = get_valid_number("月間電力使用量（kWh）を入力してください: ")
 gas_m3 = get_valid_number("月間ガス使用量（m³）を入力してください: ")
 ac_surcharge = input("エアコンを頻繁に使用しますか？（y／n）: ").strip().lower()
