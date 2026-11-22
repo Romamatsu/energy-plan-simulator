@@ -58,7 +58,6 @@ for plan in PLANS:
 ranked_plans = sorted(results, key=lambda x: x["monthly_cost"])
 ranked_plans[0]["plan"] = f"{ranked_plans[0]['plan']} ★"
 
-print(results)
 
 print("┌─────────────────────────────────────────────────────────────────────────┐")
 print(f"│                           電気・ガス料金比較 ")
